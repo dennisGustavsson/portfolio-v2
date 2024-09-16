@@ -8,9 +8,9 @@ body,
 html {
   overflow-x: hidden;
   height: 100%;
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -23,6 +23,15 @@ a {
 
 section {
   scroll-snap-align: start;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 .title {
@@ -99,11 +108,11 @@ nav a {
 }
 .container .text-container .projectsBtn {
   background-color: transparent;
-  font-family: "Elsie", serif;
+  font-family: "Gloock", serif;
   font-weight: 400;
   border: none;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 .container .text-container .projectsBtn:hover {
@@ -121,5 +130,5 @@ nav a {
 .container .gh-list li a {
   color: white;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }

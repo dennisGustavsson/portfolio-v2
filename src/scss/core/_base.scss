@@ -8,9 +8,9 @@ body,
 html {
   overflow-x: hidden;
   height: 100%;
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -25,4 +25,13 @@ a {
 
 section {
   scroll-snap-align: start;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
 }
