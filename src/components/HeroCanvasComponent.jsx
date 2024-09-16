@@ -19,7 +19,8 @@ const HeroCanvasComponent = () => {
     let lavaMesh;
     // LOAD MODEL
     const loader = new GLTFLoader();
-    loader.load("src/assets/untitleddonut2.glb", function (gltf) {
+    const modelPath = "/portfolio-v2/untitleddonut2.glb";
+    loader.load(modelPath, function (gltf) {
       lavaMesh = gltf.scene;
       scene.add(lavaMesh);
       lavaMesh.scale.set(2, 2, 2);
