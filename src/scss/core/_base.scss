@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: "Elsie", serif;
+  font-weight: 400;
+  color: white;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  // background-color: black;
+  // height: 200vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  scroll-snap-align: start;
+}
