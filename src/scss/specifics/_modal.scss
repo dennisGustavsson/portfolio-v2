@@ -1,3 +1,40 @@
+@keyframes modal-bg-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modal-bg-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes modal-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes modal-close {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    // transform: translateY(-100px);
+  }
+}
+
 .modal-background {
   position: fixed;
   top: 0;
@@ -8,7 +45,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  // visibility: hidden;
+}
+.modal-bg-in {
+  animation: modal-bg-in 0.6s ease;
+}
+.modal-bg-out {
+  animation: modal-bg-out 0.6s ease;
 }
 
 .modal-content {
@@ -17,12 +60,19 @@
   border-radius: 18px;
   border-color: none;
   position: relative;
-  transition: all 0.3s ease;
+  // transition: all 0.3s ease;
+  // animation: modal-appear 0.6s ease-in-out;
 
   .contact {
     // color: black;
     font-size: 1.7rem;
   }
+}
+.modal-appear {
+  animation: modal-appear 0.6s ease-in;
+}
+.modal-close {
+  animation: modal-close 0.2s ease-in;
 }
 
 .modal-close-button {
